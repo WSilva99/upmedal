@@ -11,10 +11,16 @@
       "blockClass": "carousel"
     },
     "children": [
-      "image#promo1"
+      "image#promo1",
+      "image#promo2"
     ]
   },
   "image#promo1": {
+    "props": {
+      "src": "https://user-images.githubusercontent.com/284515/70230392-f982e780-1736-11ea-921b-e83208e80620.png"
+    }
+  },
+  "image#promo2": {
     "props": {
       "src": "https://user-images.githubusercontent.com/284515/70230392-f982e780-1736-11ea-921b-e83208e80620.png"
     }
