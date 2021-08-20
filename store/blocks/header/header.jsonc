@@ -1,0 +1,83 @@
+{
+  "header": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header.full": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "header-row#desktop"
+    ]
+  },
+  "header-row#desktop": {
+    "props": {
+      "zIndex": 1001,
+      "sticky": true,
+      "blockClass": "main-header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "logo#desktop",
+      "header-spacer",
+      "search-bar",
+      "header-spacer",
+      "minicart.v2"
+    ]
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/letter/upmedal.png",
+      "width": "80"
+    }
+  },
+  "header-layout.mobile": {
+    "children": [
+      "header-row#mobile"
+    ]
+  },
+  "header-row#mobile": {
+    "props": {
+      "zIndex": 1001,
+      "sticky": true,
+      "blockClass": "main-header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "logo#mobile",
+      "header-spacer",
+      "search-bar#mobile",
+      "header-spacer",
+      "minicart.v2"
+    ]
+  },
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/brand/up.png",
+      "height": "30"
+    }
+  },
+  "search-bar#mobile": {
+    "props": {
+      "maxWidth": "50%"
+    }
+  }
+}

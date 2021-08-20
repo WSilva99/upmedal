@@ -1,0 +1,27 @@
+.container--menu {
+  background: rgba(48, 48, 48, 1);
+}
+
+.listItem--menu {
+  padding: 0;
+}
+
+.listItem--menu :global(.vtex-button) {
+  color: rgba(255, 255, 255, .7);
+  font-size: smaller;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+.listItem--menu :global(.vtex-button):hover {
+  color: rgba(89, 227, 45, 1);
+}
+
+.listItemActive--menu :global(.vtex-button) {
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+}
+
+.contentContainer :global(.vtex-rich-text){
+  color: white;
+}

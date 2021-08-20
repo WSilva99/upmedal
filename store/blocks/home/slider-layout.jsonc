@@ -1,0 +1,22 @@
+{
+  "slider-layout#text-test": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "blockClass": "carousel"
+    },
+    "children": [
+      "image#promo1"
+    ]
+  },
+  "image#promo1": {
+    "props": {
+      "src": "https://user-images.githubusercontent.com/284515/70230392-f982e780-1736-11ea-921b-e83208e80620.png"
+    }
+  }
+}
