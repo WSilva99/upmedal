@@ -1,0 +1,133 @@
+{
+  "search-result-layout.customQuery#promocao": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByBestDiscountDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "queryField": "157",
+        "mapField": "productClusterIds",
+        "skusFilter": "ALL_AVAILABLE"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.customQuery#corinthians": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByTopSaleDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "queryField": "Corinthians",
+        "mapField": "ft"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.customQuery#palmeiras": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByTopSaleDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "queryField": "Palmeiras",
+        "mapField": "ft"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.customQuery#guerreiros": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByTopSaleDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "queryField": "Guerreiros",
+        "mapField": "ft"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.customQuery#signos": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByTopSaleDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "queryField": "Signos",
+        "mapField": "ft"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.desktop": {
+    "props": {
+      "preventRouteChange": true
+    },
+    "children": [
+      "search-content"
+    ]
+  },
+  "search-result-layout.mobile": {
+    "props": {
+      "preventRouteChange": true
+    },
+    "children": [
+      "search-content"
+    ]
+  },
+  "search-content": {
+    "blocks": [
+      "gallery",
+      "not-found"
+    ]
+  },
+  "gallery": {
+    "props": {
+      "layouts": [
+        {
+          "name": "two",
+          "component": "OneOrTwoLineSummary",
+          "itemsPerRow": {
+            "desktop": 2,
+            "mobile": 1
+          }
+        }
+      ],
+      "OneOrTwoLineSummary": "product-summary.shelf#products"
+    }
+  },
+  "product-summary.shelf#products": {
+    "children": [
+      "product-summary-name",
+      "product-images#product",
+      "product-summary-price",
+      "add-to-cart-button"
+    ]
+  },
+  "product-images#product": {
+    "props": {
+      "maxHeight": 200
+    }
+  }
+}

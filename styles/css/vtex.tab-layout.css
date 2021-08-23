@@ -1,9 +1,13 @@
-.container--menu {
-  background: rgba(48, 48, 48, 1);
+.listContainer--menu {
+  background: #202020;
+  justify-content: flex-start;
+  /* flex-wrap: nowrap;
+  overflow-x: scroll; */
 }
 
 .listItem--menu {
   padding: 0;
+  margin: 0;
 }
 
 .listItem--menu :global(.vtex-button) {
@@ -20,8 +24,4 @@
 .listItemActive--menu :global(.vtex-button) {
   color: rgba(255, 255, 255, 1);
   font-weight: bold;
-}
-
-.contentContainer :global(.vtex-rich-text){
-  color: white;
 }

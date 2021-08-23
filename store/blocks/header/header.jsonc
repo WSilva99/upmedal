@@ -39,7 +39,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "assets/letter/upmedal.png",
+      "url": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/upmedal.png",
       "width": "80"
     }
   },
@@ -71,7 +71,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "assets/brand/up.png",
+      "url": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/upmedal.png",
       "height": "30"
     }
   },

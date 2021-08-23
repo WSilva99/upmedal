@@ -1,0 +1,37 @@
+.sliderLayoutContainer--carousel {
+  align-items: flex-end;
+}
+
+.sliderTrackContainer--carousel {
+  margin-bottom: 32px;
+}
+
+.sliderArrows--carousel {
+  z-index: 1;
+  color: white !important;
+}
+
+.sliderLeftArrow--carousel {
+  margin: 0;
+}
+
+.sliderRightArrow--carousel {
+  margin: 0;
+}
+
+.paginationDotsContainer--carousel {
+  padding-bottom: 8px;
+  z-index: 0
+}
+
+.paginationDot--carousel--isActive {
+  background: #59ff00;
+}
+
+.imageElement--carousel {
+  border-radius: 30px;
+}
+
+.caretIcon--carousel {
+  height: 16px;
+}

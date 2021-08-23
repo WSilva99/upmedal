@@ -1,3 +1,8 @@
-.autoCompleteOuterContainer {
-  background: transparent;
+.carouselGaleryThumbs {
+  display: none;
+}
+
+.carouselGaleryCursor {
+  width: 100%;
+  background: #424242;
 }

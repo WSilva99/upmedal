@@ -1,5 +1,5 @@
 {
-  "slider-layout#text-test": {
+  "slider-layout#highlights": {
     "props": {
       "itemsPerPage": {
         "desktop": 1,
@@ -9,20 +9,25 @@
       "infinite": true,
       "showNavigationArrows": "always",
       "blockClass": "carousel"
-    },
-    "children": [
-      "image#promo1",
-      "image#promo2"
-    ]
-  },
-  "image#promo1": {
-    "props": {
-      "src": "https://user-images.githubusercontent.com/284515/70230392-f982e780-1736-11ea-921b-e83208e80620.png"
     }
   },
-  "image#promo2": {
+  "list-context.image-list#highlights": {
+    "children": ["slider-layout#highlights"],
     "props": {
-      "src": "https://user-images.githubusercontent.com/284515/70230392-f982e780-1736-11ea-921b-e83208e80620.png"
+      "preload": false,
+      "height": 300,
+      "images": [
+        {
+          "width": "60vw",
+          "image": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210822%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210822T200626Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=505ea9b16e1907d600882ec237cb3a7ba214e276e4d71886e161614b6e90f64d",
+          "description": "something something"
+        },
+        {
+          "width": "60vw",
+          "image": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e?response-content-disposition=inline%3B%20filename%3D%22W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png%22%3B%20filename%2A%3DUTF-8%27%27W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210822%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210822T200658Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=f86a36807fbe8394f2d73f4c1808395e0b34863cd651886b8be7fa52a7aff540",
+          "description": "something something"
+        }
+      ]
     }
   }
 }

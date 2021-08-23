@@ -6,6 +6,7 @@
     },
     "children": [
       "tab-list",
+      "flex-layout.row#highlights",
       "tab-content"
     ]
   },
@@ -17,13 +18,8 @@
       "tab-list.item#promocao",
       "tab-list.item#corinthians",
       "tab-list.item#palmeiras",
-      "tab-list.item#signos",
-      "tab-list.item#divertidos",
-      "tab-list.item#maravilhas",
       "tab-list.item#guerreiros",
-      "tab-list.item#album1",
-      "tab-list.item#album2",
-      "tab-list.item#album3"
+      "tab-list.item#signos"
     ]
   },
   "tab-list.item#promocao": {
@@ -48,27 +44,6 @@
       "blockClass": "menu"
     }
   },
-  "tab-list.item#signos": {
-    "props": {
-      "tabId": "signos",
-      "label": "SIGNOS",
-      "blockClass": "menu"
-    }
-  },
-  "tab-list.item#divertidos": {
-    "props": {
-      "tabId": "divertidos",
-      "label": "DIVERTIDOS",
-      "blockClass": "menu"
-    }
-  },
-  "tab-list.item#maravilhas": {
-    "props": {
-      "tabId": "maravilhas",
-      "label": "7 MARAVILHAS",
-      "blockClass": "menu"
-    }
-  },
   "tab-list.item#guerreiros": {
     "props": {
       "tabId": "guerreiros",
@@ -76,110 +51,82 @@
       "blockClass": "menu"
     }
   },
-  "tab-list.item#album1": {
+  "tab-list.item#signos": {
     "props": {
-      "tabId": "album1",
-      "label": "ÁLBUM 1",
+      "tabId": "signos",
+      "label": "SIGNOS",
       "blockClass": "menu"
     }
   },
-  "tab-list.item#album2": {
+  "flex-layout.row#highlights": {
     "props": {
-      "tabId": "album2",
-      "label": "ÁLBUM 2",
-      "blockClass": "menu"
-    }
+      "marginTop": 5,
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "flex-layout.col#highlights"
+    ]
   },
-  "tab-list.item#album3": {
+  "flex-layout.col#highlights": {
     "props": {
-      "tabId": "album3",
-      "label": "ÁLBUM 3",
-      "blockClass": "menu"
-    }
+      "width": "60%"
+    },
+    "children": [
+      "list-context.image-list#highlights"
+    ]
   },
   "tab-content": {
     "children": [
       "tab-content.item#promocao",
       "tab-content.item#corinthians",
       "tab-content.item#palmeiras",
-      "tab-content.item#signos",
-      "tab-content.item#divertidos",
-      "tab-content.item#maravilhas",
       "tab-content.item#guerreiros",
-      "tab-content.item#album1",
-      "tab-content.item#album2",
-      "tab-content.item#album3"
+      "tab-content.item#signos"
     ]
   },
   "tab-content.item#promocao": {
     "props": {
-      "tabId": "promocao"
+      "tabId": "promocao",
+      "blockClass": "products"
     },
     "children": [
-      "rich-text",
-      "slider-layout#text-test"
+      "search-result-layout.customQuery#promocao"
     ]
   },
   "tab-content.item#corinthians": {
     "props": {
-      "tabId": "corinthians"
+      "tabId": "corinthians",
+      "blockClass": "products"
     },
-    "children": []
+    "children": [
+      "search-result-layout.customQuery#corinthians"
+    ]
   },
   "tab-content.item#palmeiras": {
     "props": {
-      "tabId": "palmeiras"
+      "tabId": "palmeiras",
+      "blockClass": "products"
     },
-    "children": []
-  },
-  "tab-content.item#signos": {
-    "props": {
-      "tabId": "signos"
-    },
-    "children": []
-  },
-  "tab-content.item#divertidos": {
-    "props": {
-      "tabId": "divertidos"
-    },
-    "children": []
-  },
-  "tab-content.item#maravilhas": {
-    "props": {
-      "tabId": "maravilhas"
-    },
-    "children": []
+    "children": [
+      "search-result-layout.customQuery#palmeiras"
+    ]
   },
   "tab-content.item#guerreiros": {
     "props": {
-      "tabId": "guerreiros"
+      "tabId": "guerreiros",
+      "blockClass": "products"
     },
-    "children": []
+    "children": [
+      "search-result-layout.customQuery#guerreiros"
+    ]
   },
-  "tab-content.item#album1": {
+  "tab-content.item#signos": {
     "props": {
-      "tabId": "album1"
+      "tabId": "signos",
+      "blockClass": "products"
     },
-    "children": []
-  },
-  "tab-content.item#album2": {
-    "props": {
-      "tabId": "album2"
-    },
-    "children": []
-  },
-  "tab-content.item#album3": {
-    "props": {
-      "tabId": "album3"
-    },
-    "children": []
-  },
-  "rich-text": { 
-    "props": { 
-      "text": "PROMOÇÂO 1",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
-    }
+    "children": [
+      "search-result-layout.customQuery#signos"
+    ]
   }
 }
